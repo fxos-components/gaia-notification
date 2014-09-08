@@ -8,15 +8,20 @@
   <link rel="stylesheet" type="text/css" href="../bower_components/gaia-theme/base.css">
   <link rel="stylesheet" type="text/css" href="../bower_components/gaia-theme/style.css">
   <link rel="stylesheet" type="text/css" href="../bower_components/gaia-icons/style-embedded.css">
-  <link rel="stylesheet" type="text/css" href="gaia-fonts/style.css">
   <style>
 		.preview {
 			position: relative;
-			width: 400px;
+			width: 430px;
 			height: 700px;
 			border: 2px solid black;
 			float: left;
 		}
+		
+		@font-face {
+			font-family: "FiraSans";
+			src: url("gaia-fonts/fonts/FiraSans-RegularItalic.woff") format("woff");
+			font-weight: normal; /* 400 */
+		}	
 		
 		/*
 		 *
@@ -26,8 +31,6 @@
 			bottom: 4rem;
 			left: 5%;
 			font-family: "FiraSans";
-			font-style: italic;
-			font-weight: 500;
 			font-size: 18px;
 			text-align: center;
 			background-color: var(--banner-background, #EEE);
@@ -35,7 +38,6 @@
 			width: 90%;
 			height: 80px;
 			padding: 30px 12px 30px 20px;
-			vertical-align: center;
 		}
 		
 		[dismissable] {
