@@ -1,0 +1,37 @@
+gaia-notification {
+	position: absolute;
+	bottom: 4rem;
+	left: 5%;
+	font-family: "FiraSans";
+	font-size: 18px;
+	text-align: center;
+	background-color: var(--banner-background, #EEE);
+	border-bottom: 1px solid var(--color-eta);
+	width: 90%;
+	height: 80px;
+	padding: 30px 12px 30px 20px;
+}
+
+[dismissable] {
+	text-align: left;
+}
+
+.close {
+	display:none;
+}
+
+[dismissable] .close {
+	display: block;
+	float: right;
+	width: 22px;
+	height: 22px;
+	margin-top: -5px;
+	border: 3px solid var(--color-brand-beta, #000);
+	border-radius: 50%;
+	color: var(--color-brand-beta, #000);
+	/*transform: scale(0.9);*/
+}
+
+[dismissable] .close:before {
+	margin: 2px 0 0 4px;
+}
